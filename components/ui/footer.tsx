@@ -18,7 +18,7 @@ export default function Footer() {
                 <Image src={Logo} width={24} height={24} alt="Logo" />
               </Link>
             </div>
-            <div className="grow text-sm text-zinc-500">&copy; Cruip.com. All rights reserved.</div>
+            <div className="grow text-sm text-zinc-500">Built by chasingbrains.co. All rights reserved.</div>
             {/* Social links */}
             <ul className="flex space-x-4 mt-4 mb-1">
               <li>
@@ -53,16 +53,7 @@ export default function Footer() {
                 <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">About us</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Diversity & Inclusion</a>
-              </li>
-              <li>
                 <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Blog</a>
-              </li>
-              <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Careers</a>
-              </li>
-              <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Financial statements</a>
               </li>
             </ul>
           </div>
@@ -77,9 +68,7 @@ export default function Footer() {
               <li>
                 <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Terms of service</a>
               </li>
-              <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Collaboration features</a>
-              </li>
+
             </ul>
           </div>
 
@@ -95,9 +84,6 @@ export default function Footer() {
               </li>
               <li>
                 <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Privacy policy</a>
-              </li>
-              <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Brand Kit</a>
               </li>
             </ul>
           </div>

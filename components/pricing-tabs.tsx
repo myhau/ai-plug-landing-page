@@ -28,7 +28,7 @@ export default function PricingTabs() {
     {
       contacts: '10K',
       plans: {
-        essential: '29',
+        essential: '0',
         premium: '14.99',
         enterprise: '120'
       }
@@ -103,7 +103,7 @@ export default function PricingTabs() {
       <div className="py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="relative max-w-3xl mx-auto text-center pb-12">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Start your journey today</h2>
+            <h2 id="pricing" className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Start your journey today</h2>
             <p className="text-lg text-zinc-500">Start creating realtime design experiences for free. Upgrade for extra features and collaboration with your team.</p>
           </div>
 
@@ -128,94 +128,20 @@ export default function PricingTabs() {
 
             <div className="max-w-sm mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none">
 
-              {/* Pricing tab 1 */}
-              {/*<div className="h-full">*/}
-              {/*  <div className="relative flex flex-col h-full p-6 rounded-lg border border-transparent [background:linear-gradient(theme(colors.zinc.50),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box]">*/}
-              {/*    <div className="mb-4">*/}
-              {/*      <div className="text-lg text-zinc-900 font-semibold mb-1">Essential</div>*/}
-              {/*      <div className="font-inter-tight inline-flex items-baseline mb-2">*/}
-              {/*        <span className="text-zinc-900 font-bold text-2xl">$</span>*/}
-              {/*        <span className="text-zinc-900 font-bold text-3xl">{prices[tier].plans.essential}</span>*/}
-              {/*        <span className="text-zinc-500 font-medium">/mo</span>*/}
-              {/*      </div>*/}
-              {/*      <div className="text-zinc-500">For power users who want access to creative features.</div>*/}
-              {/*    </div>*/}
-              {/*    <div className="grow">*/}
-              {/*      <div className="text-sm text-zinc-900 font-medium mb-4">Includes:</div>*/}
-              {/*      <ul className="text-zinc-600 dark:text-zinc-400 text-sm space-y-3 grow">*/}
-              {/*        <li className="flex items-center">*/}
-              {/*          <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">*/}
-              {/*            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />*/}
-              {/*          </svg>*/}
-              {/*          <Tooltip id="01" content="Lorem Ipsum is simply dummy text of the printing.">*/}
-              {/*            Unlimited workspace boards*/}
-              {/*          </Tooltip>*/}
-              {/*        </li>*/}
-              {/*        <li className="flex items-center">*/}
-              {/*          <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">*/}
-              {/*            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />*/}
-              {/*          </svg>*/}
-              {/*          <Tooltip id="02" content="Lorem Ipsum is simply dummy text of the printing.">*/}
-              {/*            Unlimited viewers*/}
-              {/*          </Tooltip>*/}
-              {/*        </li>*/}
-              {/*        <li className="flex items-center">*/}
-              {/*          <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">*/}
-              {/*            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />*/}
-              {/*          </svg>*/}
-              {/*          <Tooltip id="03" content="Lorem Ipsum is simply dummy text of the printing.">*/}
-              {/*            Unlimited project templates*/}
-              {/*          </Tooltip>*/}
-              {/*        </li>*/}
-              {/*        <li className="flex items-center">*/}
-              {/*          <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">*/}
-              {/*            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />*/}
-              {/*          </svg>*/}
-              {/*          <Tooltip id="04" content="Lorem Ipsum is simply dummy text of the printing.">*/}
-              {/*            Change management*/}
-              {/*          </Tooltip>*/}
-              {/*        </li>*/}
-              {/*        <li className="flex items-center">*/}
-              {/*          <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">*/}
-              {/*            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />*/}
-              {/*          </svg>*/}
-              {/*          <Tooltip id="05" content="Lorem Ipsum is simply dummy text of the printing.">*/}
-              {/*            Taxonomy development*/}
-              {/*          </Tooltip>*/}
-              {/*        </li>*/}
-              {/*        <li className="flex items-center">*/}
-              {/*          <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">*/}
-              {/*            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />*/}
-              {/*          </svg>*/}
-              {/*          <Tooltip id="06" content="Lorem Ipsum is simply dummy text of the printing.">*/}
-              {/*            Customer success manager*/}
-              {/*          </Tooltip>*/}
-              {/*        </li>*/}
-              {/*      </ul>*/}
-              {/*    </div>*/}
-              {/*    <div className="mt-8">*/}
-              {/*      <a className="btn text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900 w-full shadow" href="#0">*/}
-              {/*        Try for Free*/}
-              {/*      </a>*/}
-              {/*    </div>*/}
-              {/*  </div>*/}
-              {/*</div>*/}
-
-              {/* Pricing tab 2 */}
+               {/*Pricing tab 1*/}
               <div className="h-full">
-                <div className="relative flex flex-col h-full p-6 rounded-lg bg-zinc-800">
-                  <Image className="absolute right-6 -top-5 mix-blend-exclusion" src={PricingDecoration} alt="Pricing decoration" width={76} height={74} aria-hidden="true" />
+                <div className="relative flex flex-col h-full p-6 rounded-lg border border-transparent [background:linear-gradient(theme(colors.zinc.50),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box]">
                   <div className="mb-4">
-                    <div className="text-lg text-zinc-200 font-semibold mb-1">Premium</div>
+                    <div className="text-lg text-zinc-900 font-semibold mb-1">Demo</div>
                     <div className="font-inter-tight inline-flex items-baseline mb-2">
-                      <span className="text-zinc-200 font-bold text-2xl">$</span>
-                      <span className="text-zinc-200 font-bold text-3xl">{prices[tier].plans.premium}</span>
+                      <span className="text-zinc-900 font-bold text-2xl">$</span>
+                      <span className="text-zinc-900 font-bold text-3xl">{prices[tier].plans.essential}</span>
                       <span className="text-zinc-500 font-medium">/mo</span>
                     </div>
-                    <div className="text-zinc-500">For creative organizations that need full control & support.</div>
+                    <div className="text-zinc-500">For people just trying to understand what this software is about.</div>
                   </div>
                   <div className="grow">
-                    <div className="text-sm text-zinc-200 font-medium mb-4">Includes:</div>
+                    <div className="text-sm text-zinc-900 font-medium mb-4">Includes:</div>
                     <ul className="text-zinc-600 dark:text-zinc-400 text-sm space-y-3 grow">
                       <li className="flex items-center">
                         <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12"
@@ -224,17 +150,7 @@ export default function PricingTabs() {
                             d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
                         </svg>
                         <Tooltip id="13" content="Lorem Ipsum is simply dummy text of the printing.">
-                          Frontier models: GPT4o, Claude 3 Opus, Claude 3.5 Sonnet, Perplexity Sonar Online.
-                        </Tooltip>
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12"
-                             xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
-                        </svg>
-                        <Tooltip id="13" content="Lorem Ipsum is simply dummy text of the printing.">
-                          (coming soon) Local models: LLama 3, Gemma 2, Phi 3, Mistral.
+                          Demo model
                         </Tooltip>
                       </li>
                       <li className="flex items-center">
@@ -260,8 +176,78 @@ export default function PricingTabs() {
                     </ul>
                   </div>
                   <div className="mt-8">
-                    <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="#0">
+                    <a
+                      className="btn text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900 w-full shadow"
+                      href="#0">
                       Try for Free
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Pricing tab 2 */}
+              <div className="h-full">
+                <div className="relative flex flex-col h-full p-6 rounded-lg bg-zinc-800">
+                  <Image className="absolute right-6 -top-5 mix-blend-exclusion" src={PricingDecoration}
+                         alt="Pricing decoration" width={76} height={74} aria-hidden="true"/>
+                  <div className="mb-4">
+                    <div className="text-lg text-zinc-200 font-semibold mb-1">Premium</div>
+                    <div className="font-inter-tight inline-flex items-baseline mb-2">
+                      <span className="text-zinc-200 font-bold text-2xl">$</span>
+                      <span className="text-zinc-200 font-bold text-3xl">{prices[tier].plans.premium}</span>
+                      <span className="text-zinc-500 font-medium">/mo</span>
+                    </div>
+                    <div className="text-zinc-500">For power-users that need full control
+                    </div>
+                  </div>
+                  <div className="grow">
+                    <div className="text-sm text-zinc-200 font-medium mb-4">Includes:</div>
+                    <ul className="text-zinc-600 dark:text-zinc-400 text-sm space-y-3 grow">
+                      <li className="flex items-center">
+                        <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12"
+                             xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
+                        </svg>
+                        <Tooltip id="13" content="Lorem Ipsum is simply dummy text of the printing.">
+                          Frontier models: GPT4o, Claude 3 Opus, Claude 3.5 Sonnet, Perplexity Sonar Online.
+                        </Tooltip>
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12"
+                             xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
+                        </svg>
+                        <Tooltip id="13" content="Lorem Ipsum is simply dummy text of the printing.">
+                        (coming soon) Local models: LLama 3, Gemma 2, Phi 3, Mistral.
+                        </Tooltip>
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12"
+                             xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
+                        </svg>
+                        <Tooltip id="14" content="Lorem Ipsum is simply dummy text of the printing.">
+                          Just press Cmd+Space to show gpt-for-devs. Switch models instantly.
+                        </Tooltip>
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12"
+                             xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
+                        </svg>
+                        <Tooltip id="15" content="Lorem Ipsum is simply dummy text of the printing.">
+                          Predefined prompts + ability to create own prompts
+                        </Tooltip>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mt-8">
+                    <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="https://buy.stripe.com/9AQ5myeJU0yB2LC7st">
+                      Start
                     </a>
                   </div>
                 </div>
@@ -281,9 +267,7 @@ export default function PricingTabs() {
                         className="text-zinc-900 font-bold text-3xl">{prices[tier].plans.enterprise}</span>
                       <span className="text-zinc-500 font-medium">/year</span>
                     </div>
-                    <div className="text-zinc-500">For creative organizations that need full control &
-                      support.
-                    </div>
+                    <div className="text-zinc-500">For early-adopters that want to feel the power and support</div>
                   </div>
                   <div className="grow">
                     <div className="text-sm text-zinc-900 font-medium mb-4">Includes:</div>
@@ -373,8 +357,8 @@ export default function PricingTabs() {
                   <div className="mt-8">
                     <a
                       className="btn text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900 w-full shadow"
-                      href="#0">
-                      Try for Free
+                      href="https://buy.stripe.com/6oEg1c1X81CFgCs6oo">
+                      Start
                     </a>
                   </div>
                 </div>
@@ -385,15 +369,15 @@ export default function PricingTabs() {
           </div>
 
           {/* FAQs */}
-          <div className="max-w-2xl mx-auto">
-            <div className="space-y-2">
-              {faqs.map((faq, index) => (
-                <Accordion key={index} title={faq.title} id={`faqs-${index}`} active={faq.active}>
-                  {faq.text}
-                </Accordion>
-              ))}
-            </div>
-          </div>
+          {/*<div className="max-w-2xl mx-auto">*/}
+          {/*  <div className="space-y-2">*/}
+          {/*    {faqs.map((faq, index) => (*/}
+          {/*      <Accordion key={index} title={faq.title} id={`faqs-${index}`} active={faq.active}>*/}
+          {/*        {faq.text}*/}
+          {/*      </Accordion>*/}
+          {/*    ))}*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
         </div>
       </div>

@@ -24,10 +24,10 @@ export default function Hero() {
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <div>
-                    <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/request-demo">Download for macOS</Link>
+                    <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/download">Download for macOS</Link>
                   </div>
                   <div>
-                    <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="#0">See pricing</a>
+                    <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="#pricing">See pricing</a>
                   </div>
                 </div>
               </div>
@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <Stats />
+        {/*<Stats />*/}
 
       </div>
     </section>
